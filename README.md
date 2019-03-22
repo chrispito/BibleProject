@@ -1,2 +1,3 @@
-# reactNativeWebFullApp
-Bible Ostervald App
+# Bible Project
+
+## Bible Ostervald App
