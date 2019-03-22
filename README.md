@@ -1,0 +1,2 @@
+# reactNativeWebFullApp
+Bible Ostervald App
