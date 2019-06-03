@@ -1,5 +1,6 @@
-import 'package:bible_osterwald/models/pages/page_view_model.dart';
-import 'package:bible_osterwald/pages/page.dart';
+import 'package:bible_osterwald/pages/NotesPage.dart';
+import 'package:bible_osterwald/pages/ProfilePage.dart';
+import 'package:bible_osterwald/pages/SearchPage.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -28,25 +29,39 @@ class MainScreen extends StatefulWidget {
 
 class _MyHomePageState extends State<MainScreen> {
 
+  int _selectedPage = 1;
+  final _pageOptions = [
+    new NotesPage(),
+    new SearchPage(),
+    new ProfilePage(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text(widget.title),
-      // ),
-      body: new Stack(
-        children: <Widget>[
-          new Page(
-            viewModel: PageViewModel(
-              Color.fromRGBO(255,215,0, 1),
-              'La Sainte Bible',
-              Colors.purpleAccent,
-              'Elegant',
-              'assets/images/bible_PNG33.png'
-            )
-          )
-         ],
-      )
+      body: _pageOptions[_selectedPage],
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedPage,
+        onTap: (int index) {
+          setState(() {
+            _selectedPage = index;
+          });
+        },
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bookmark),
+            title: Text('Notes')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.view_headline),
+            title: Text('Read')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.people),
+            title: Text('Profile')
+          ),
+        ],
+      ),
     );
   }
 }

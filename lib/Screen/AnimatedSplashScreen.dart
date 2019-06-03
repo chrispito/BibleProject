@@ -1,7 +1,4 @@
 import 'dart:async';
-import 'package:bible_osterwald/models/pages/page_view_model.dart';
-import 'package:bible_osterwald/pages/page.dart';
-
 import 'package:bible_osterwald/Constant/Constant.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

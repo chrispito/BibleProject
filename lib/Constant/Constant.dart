@@ -1,4 +1,4 @@
 String HOME_SCREEN='/HomeScreen',
-IMAGE_SPLASH='/ImageSplashScreen',
-VIDEO_SPALSH='/VideoSplashScreen',
-ANIMATED_SPALSH='/AnimatedSplashScreen';
+SETTINGS='/Settings',
+PROFILE='/Profile',
+NOTES='/Notes';
