@@ -13,6 +13,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   video_player: ^0.8.0
   shared_preferences: "^0.4.2"
+  xml: "3.4.1"
+  font_awesome_flutter: ^8.2.0
 
 dev_dependencies:
   flutter_test:
@@ -25,6 +27,7 @@ flutter:
     - assets/images/bible_PNG33.png
     - assets/images/bible_PNG28.png
     - assets/images/bible_PNG47.png
+    - assets/xml/bible.xml
   fonts:
     - family: Elegant
       fonts:

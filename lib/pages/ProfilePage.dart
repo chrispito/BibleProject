@@ -5,7 +5,16 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("Profile page");
+    return new Container(
+            color: Colors.white,
+            width: double.infinity,
+            child: new Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text("Profile Page")
+              ]
+            ),
+          );
   }
   
 }

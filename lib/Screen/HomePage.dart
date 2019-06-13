@@ -3,21 +3,6 @@ import 'package:bible_osterwald/pages/ProfilePage.dart';
 import 'package:bible_osterwald/pages/SearchPage.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'La Sainte Bible',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MainScreen(title: 'La Sainte Bible'),
-    );
-  }
-}
-
 class MainScreen extends StatefulWidget {
   MainScreen({Key key, this.title}) : super(key: key);
 
